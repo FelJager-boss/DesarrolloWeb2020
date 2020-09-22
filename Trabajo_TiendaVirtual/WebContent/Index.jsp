@@ -68,11 +68,11 @@
                                 </div>
                                 <div class="header-info-right">
                                    <ul>                                          
-                                       <li><a href="login.jsp">My Account </a></li>
+                                       <li><a href="login.jsp">Acceso </a></li>
                                        <li><a href="product_list.html">Wish List  </a></li>
                                        <li><a href="cart.html">Shopping</a></li>
                                        <li><a href="cart.html">Cart</a></li>
-                                       <li><a href="checkout.html">Checkout</a></li>
+                                       <li><a href="checkout.jsp">Checkout</a></li>
                                    </ul>
                                 </div>
                             </div>
@@ -94,21 +94,20 @@
                                     <nav>                                                
                                         <ul id="navigation">                                                                                                                                     
                                             <li><a href="index.html">Home</a></li>
-                                            <li><a href="Catagori.html">Catagori</a></li>
-                                            <li class="hot"><a href="#">Latest</a>
+                                            <li><a href="Catagori.html">Catagorias</a></li>
+                                            <li class="hot"><a href="#">Ultimas Ofertas</a>
                                                 <ul class="submenu">
-                                                    <li><a href="product_list.html"> Product list</a></li>
-                                                    <li><a href="single-product.html"> Product Details</a></li>
+                                                    <li><a href="product_list.html"> Lista de Productos</a></li>
+                                                    <li><a href="single-product.html"> Detalle de Productos</a></li>
                                                 </ul>
                                             </li>
                                             <li><a href="blog.html">Blog</a>
                                                 <ul class="submenu">
                                                     <li><a href="blog.html">Blog</a></li>
-                                                    <li><a href="single-blog.html">Blog Details</a></li>
                                                 </ul>
                                             </li>
                                             
-                                            <li><a href="contact.html">Contact</a></li>
+                                            <li><a href="contact.html">Contacto</a></li>
                                         </ul>
                                     </nav>
                                 </div>
@@ -163,11 +162,11 @@
 		                            <div class="col-xl-5 col-lg-5 col-md-5 col-sm-8">
 		                                <div class="hero__caption">
 		                                    <span data-animation="fadeInRight" data-delay=".4s">60% Discount</span>
-		                                    <h1 data-animation="fadeInRight" data-delay=".6s">Winter <br> Collection</h1>
-		                                    <p data-animation="fadeInRight" data-delay=".8s">Best Cloth Collection By 2020!</p>
+		                                    <h1 data-animation="fadeInRight" data-delay=".6s">Coleccion</h1>
+		                                    <p data-animation="fadeInRight" data-delay=".8s">mejores ofertas</p>
 		                                    <!-- Hero-btn -->
 		                                    <div class="hero__btn" data-animation="fadeInRight" data-delay="1s">
-		                                        <a href="industries.html" class="btn hero-btn">Shop Now</a>
+		                                        <a href="industries.html" class="btn hero-btn">Comprar Ahora</a>
 		                                    </div>
 		                                </div>
 		                            </div>
@@ -190,13 +189,7 @@
 		                                <span>Manz</span>
 		                            </div>
 		                        </div>
-		                        <div class="col-xl-8 col-lg-8">
-		                            <div class="best-product-caption">
-		                                <h2>Find The Best Product<br> from Our Shop</h2>
-		                                <p>Designers who are interesten creating state ofthe.</p>
-		                                <a href="#" class="black-btn">Shop Now</a>
-		                            </div>
-		                        </div>
+		                        
 		                    </div>
 		                </div>
 		           </div>
@@ -214,8 +207,8 @@
 		                    <div class="row d-flex align-items-center">
 		                        <div class="col-xl-5 col-lg-5 col-md-6 offset-xl-1 offset-lg-1">
 		                            <div class="latest-caption">
-		                                <h2>Get Our<br>Latest Offers News</h2>
-		                                <p>Subscribe news latter</p>
+		                                <h2>Recibe<br>Nuestras Ultimas Ofertas</h2>
+		                                <p>Subscribete</p>
 		                            </div>
 		                        </div>
 		                         <div class="col-xl-5 col-lg-5 col-md-6 ">
@@ -288,10 +281,10 @@
 		                           <div class="footer-tittle">
 		                               <h4>Quick Links</h4>
 		                               <ul>
-		                                   <li><a href="#">About</a></li>
-		                                   <li><a href="#"> Offers & Discounts</a></li>
-		                                   <li><a href="#"> Get Coupon</a></li>
-		                                   <li><a href="#"> Contact Us</a></li>
+		                                   <li><a href="#"> Nosotros</a></li>
+		                                   <li><a href="#"> Ofertas y Descuentos</a></li>
+		                                   <li><a href="#"> Recibe Cupon</a></li>
+		                                   <li><a href="#"> Contactanos</a></li>
 		                               </ul>
 		                           </div>
 		                       </div>
@@ -301,10 +294,7 @@
 		                           <div class="footer-tittle">
 		                               <h4>New Products</h4>
 		                               <ul>
-		                                   <li><a href="#">Woman Cloth</a></li>
-		                                   <li><a href="#">Fashion Accessories</a></li>
-		                                   <li><a href="#"> Man Accessories</a></li>
-		                                   <li><a href="#"> Rubber made Toys</a></li>
+		                                   
 		                               </ul>
 		                           </div>
 		                       </div>
@@ -342,6 +332,7 @@
 		           </div>
 		       </div>
 		</footer>
+		
 		<script src="./assets/js/vendor/jquery-1.12.4.min.js"></script>
 		        <script src="./assets/js/popper.min.js"></script>
 		        <script src="./assets/js/bootstrap.min.js"></script>
