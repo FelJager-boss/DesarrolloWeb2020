@@ -6,7 +6,7 @@ import java.sql.Connection;
 public class Conexion {
 
 	Connection con;
-	String url = "jdbc:mysql://localhost:808/bd_sistemacompras";
+	String url = "jdbc:mysql://localhost:8080/bd_sistemacompras";
 	String user = "root";
 	String pass =  "";
 	

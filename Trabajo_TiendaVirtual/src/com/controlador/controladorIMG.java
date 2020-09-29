@@ -1,33 +1,26 @@
 package com.controlador;
 
 import java.io.IOException;
+import javax.servlet.ServletConfig;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-/**
- * Servlet implementation class controladorIMG
- */
-@WebServlet("/controladorIMG")
-public class controladorIMG extends HttpServlet {
-	private static final long serialVersionUID = 1L;
-       
-    /**
-     * @see HttpServlet#HttpServlet()
-     */
-    public controladorIMG() {
-        super();
-        // TODO Auto-generated constructor stub
-    }
+import com.modelo.ProductoDAO;
 
-	/**
-	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
-	 */
+/**
+ * Servlet implementation class ControladorIMG
+ */
+@WebServlet(asyncSupported = true, urlPatterns = { "/ControladorIMG" })
+public class ControladorIMG extends HttpServlet {
+	
+	ProductoDAO pdao = new ProductoDAO();
+	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		response.getWriter().append("Served at: ").append(request.getContextPath());
+		int id = Integer.parseInt(request.getParameter("id"));
+		pdao.listarImg(id, response);
 	}
 
 	/**
@@ -36,6 +29,41 @@ public class controladorIMG extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		doGet(request, response);
+	}
+
+	/**
+	 * @see HttpServlet#doPut(HttpServletRequest, HttpServletResponse)
+	 */
+	protected void doPut(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+	}
+
+	/**
+	 * @see HttpServlet#doDelete(HttpServletRequest, HttpServletResponse)
+	 */
+	protected void doDelete(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+	}
+
+	/**
+	 * @see HttpServlet#doHead(HttpServletRequest, HttpServletResponse)
+	 */
+	protected void doHead(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+	}
+
+	/**
+	 * @see HttpServlet#doOptions(HttpServletRequest, HttpServletResponse)
+	 */
+	protected void doOptions(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+	}
+
+	/**
+	 * @see HttpServlet#doTrace(HttpServletRequest, HttpServletResponse)
+	 */
+	protected void doTrace(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
 	}
 
 }

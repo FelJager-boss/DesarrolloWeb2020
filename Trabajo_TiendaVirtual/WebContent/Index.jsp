@@ -1,17 +1,19 @@
+
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>STORE|TOTAL</title>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-	
+	<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 </head>
+
 <body>
 
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-	  <a class="navbar-brand" href="#">Navbar</a>
+	  <a class="navbar-brand" href="#">TECNOstore</a>
 	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 	    <span class="navbar-toggler-icon"></span>
 	  </button>
@@ -19,14 +21,14 @@
 	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
 	    <ul class="navbar-nav mr-auto">
 	      <li class="nav-item active">
-	        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+	        <a class="nav-link" href="Controlador?accion = home">Home <span class="sr-only">(current)</span></a>
 	      </li>
 	      <li class="nav-item">
 	        <a class="nav-link" href="#">Ofertas del Dia</a>
 	      </li>
 	      
 	      <li class="nav-item">
-	        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Carrito</a>
+	        <a class="nav-link disabled" href="Contador?accion = Carrito" tabindex="-1" aria-disabled="true"><i class="fas fa-cart-plus"><label style="color: orange">${contador}</label></i>Carrito</a>
 	      </li>
 	    </ul>
 	    <form class="form-inline my-2 my-lg-0">
@@ -47,29 +49,33 @@
 	        </div>
 	      </li>
 	    </ul>
+	    
 	  </div>
 	</nav>
 	
 	<div class="container mt-2">
 		<div class="row">
+		<c:forEach>
 			<div class = "col-sm-4">
 				<div class="card">
 				<div class="card-header">
-					<h2>Nombre Producto</h2>
+					<label>${p.getNombres()}</label>
 				</div>
 				<div class="card-body">
-					<i>$56</i>
-					<img src="" width="200" height="180">
+					<i>${p.getPrecio()}</i>
+					<img src="ControladorIMG?id=${p.getId()}" width="200" height="180">
 				</div>
 				<div class="card-footer text-center">
-					<Label>Descripcion Producto</Label>
+					<Label>${p.getDescripcion()}</Label>
 					<div>
-						<a class="btn btn-outline-info">Agregar a Carrito</a>
-						<a class="btn btn-outline-info">Comprar</a>
+						<a href="Controlador?accion = "AgregarCarrito&id=${p.getId()}" class="btn btn-outline-info">Agregar a Carrito</a>
+						<a href="" class="btn btn-danger">Comprar</a>
 					</div>	
 				</div>
 				</div>
 			</div>
+		</c:forEach>
+			
 		</div>
 	</div>
 
